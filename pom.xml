@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.leancloud</groupId>
     <artifactId>cloud-function-sdk</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.1-SNAPSHOT</version>
 
     <name>leancloud leanengine cloud function library</name>
     <description>leancloud leanengine cloud function library</description>
@@ -28,7 +28,7 @@
         <connection>scm:git:git://github.com/leancloud/cloud-function-java-sdk.git</connection>
         <developerConnection>scm:git:git@github.com:leancloud/cloud-function-java-sdk.git</developerConnection>
         <url>http://github.com/leancloud/cloud-function-java-sdk/tree/master</url>
-        <tag>v0.4.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <snapshotRepository>
