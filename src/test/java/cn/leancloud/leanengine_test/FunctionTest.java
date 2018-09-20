@@ -21,6 +21,17 @@ import static org.junit.Assert.*;
 public class FunctionTest extends EngineBasicTest {
 
   @Test
+  public void test_root() throws IOException {
+    Request.Builder builder = new Request.Builder();
+    builder.url("http://localhost:3000");
+    builder.get();
+    Response response = client.newCall(builder.build()).execute();
+    assertEquals(HttpServletResponse.SC_OK, response.code());
+    String body = new String(response.body().bytes());
+    assertEquals("This is a LeanEngine application.", body);
+  }
+
+  @Test
   public void test_ping() throws IOException {
     Request.Builder builder = new Request.Builder();
     builder.url("http://localhost:3000/__engine/1/ping");
