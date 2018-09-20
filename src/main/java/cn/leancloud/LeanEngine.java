@@ -128,6 +128,8 @@ public class LeanEngine {
       handler.addServletWithMapping(metadataHolder, rootPath + "/functions/_ops/metadatas");
     }
 
+    handler.addServletWithMapping(DefaultServlet.class, "/*");
+
     server = new Server(appConf.getPort());
     server.setHandler(handler);
     server.start();
